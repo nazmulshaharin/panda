@@ -10,9 +10,9 @@
 <body>
   <!--header start-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#Home">
           <img src="images/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#Watch">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">shows</a>
+              <a class="nav-link" href="#Shoes">shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#Backpack">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -38,7 +38,7 @@
     </nav>
 
     <!--image slider -->
-    <section class="container">
+    <section class="container" id="Home">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -99,7 +99,7 @@
   </header>
   <main>
     <!--categgries -->
-    <section class="container">
+    <section class="container" id="Watch">
     <div class="container my-5">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6 col-12">
@@ -123,7 +123,7 @@
       </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container" id="Shoes">
       <h2>Shoes</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -165,7 +165,7 @@
       </div>
     </section>
      <!--bag section-->
-    <section class="container my-5">
+    <section class="container my-5" id="Backpack">
       <h2>Backpack</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -209,12 +209,20 @@
     </section>
 
     <!--subscribe section -->
-    <section class="container">
-
+    <section style="height: 300px;" class="container bg-info d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+            <div>
+              <h1>LET'S STAY IN TOUCH
+              </h1>
+              <p>Get updates on sales, specials and more
+              </p>
+              <input type="text" placeholder="your email">
+              <br>
+              <button class="btn btn-warning rounded-3">Submit</button>
+            </div>
     </section>
   </main>
-  <footer>
-
+  <footer class="mt-5 text-center">
+    <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>  
   </footer>
   <!-- bootstrap script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
